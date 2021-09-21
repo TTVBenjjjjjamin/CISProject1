@@ -37,11 +37,13 @@ public class CountDownTimerPanelMainSwing extends JPanel {
 			if(e.getSource() == quitItem){
 				System.exit(1);
 			}
+			else if (e.getSource() == suspendFalse){
+				CountDownTimer.setSuspend(false);
+			}
+			else if (e.getSource() == supsendTrue) {
+				CountDownTimer.setSuspend(true);
+			}
 
-//			if (e.getSource() == suspendFalse)
-//				CountDownTimer.setSuspend(false);
-//			if (e.getSource() == supsendTrue)
-//				CountDownTimer.setSuspend(true);
 		}
 		
 	}
